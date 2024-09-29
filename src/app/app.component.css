@@ -1,0 +1,51 @@
+/* Basic styles for the navbar */
+.navbar {
+    background-color: #daf73a; /* Dark background color */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; /* Align items horizontally */
+    justify-content: space-around; /* Space between links */
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: rgb(7, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change background color on hover */
+  .navbar ul li a:hover {
+    background-color: #ecf531; /* Slightly lighter shade on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 600px) {
+    .navbar ul {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center;
+    }
+  
+    .navbar ul li a {
+      padding: 10px 0;
+      width: 100%; /* Make links full width */
+      text-align: left;
+    }
+  }
+  
